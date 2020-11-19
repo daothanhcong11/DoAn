@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "GiaoVien";
+}
+
+<div id="ds">
+    <p>Danh Sách Giáo Viên</p>
+</div>
+<div id="container-ds">
+    <input class="form-control" type="text" name="timkiem" placeholder="Nhập tên giáo viên" value="" />
+    <div class=""><button class="btn btn-primary" type="submit" asp-controller="" asp-action="">Tìm Kiếm </button></div>
+    <div class=""><button class="btn btn-primary" type="button"> <a asp-controller="GiaoVien" asp-action="TaoMoiGiaoVien">Tạo mới</a> </button></div>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên Giáo Viên</th>
+            <th scope="col">Tên Đăng Nhập</th>
+            <th scope="col">Email</th>
+            <th scope="col">Trường</th>
+            <th scope="col">Số Điện Thoại</th>
+            <th scope="col">Trạng Thái</th>
+            <th scope="col">Chỉnh Sửa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Nguyễn Văn A</td>
+            <td>NVA123</td>
+            <td>nguyenvana@gmail.com</td>
+            <td>Đại Học Kiến Trúc</td>
+            <td>0344838484</td>
+            <td>Hoạt Động</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </tbody>
+</table>
+<style>
+    #gv1{
+        border-bottom :4px solid  #fb7613;
+    }
+</style>

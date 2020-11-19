@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+@model DoAn.Models.ModelTest;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Đăng nhập </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @Model.XinChao
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Education</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" id="center-1">
+            <form action="" class="needs-validation" novalidate>
+                <h1>Đăng Nhập</h1>
+                <h5>Vui lòng nhập tài khoản và mật khẩu</h5>
+                <div class="form-group">
+                    <label for="uname">Tên đăng nhập</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                    <div class="invalid-feedback">Vui lòng nhập tên đăng nhập</div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Mật Khẩu</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
+                </div>
+                <div class="form-group form-check">
+                    <label>
+                        <input class="frm" type="checkbox" name="check"> Ghi nhớ tài khoản của bạn
+                    </label>
+                </div>
+                <div class="text-center"><button type="submit" asp-controller="home" asp-action="giaovienlogin">Đăng nhập giáo viên </button></div>
+                <div class="text-center" style="margin-top:50px"><button type="submit" asp-controller="TruongHoc" asp-action="TruongHoc">Đăng nhập admin </button></div>
+                @*Sau khi ad đăng nhập mặc định vào trang trường học*@
+            </form>  
+            <script src="~/js/checkinput.js" asp-append-version="true"></script>
+        </main>
+    </div>
+
+    <footer class="border-top footer ">
+        <div class="container">
+            &copy; 2020 - Đào Thanh Công -
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

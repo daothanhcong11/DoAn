@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "Tạo mới giáo viên";
+}
+<div id="ds">
+    <p>Tạo Tài Khoản Giáo Viên</p>
+</div>
+<div id="container-ds">
+    <form action="" class="needs-validation" novalidate>
+        <div class="taomoigiaovien">
+            <div class="form-group">
+                <label for="uname">Tên Giáo Viên</label><br />
+                <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+                <div class="invalid-feedback">Vui lòng nhập tên giáo viên</div>
+            </div><br />
+            <div class="form-group">
+                <label for="pwd">Tên Đăng Nhập</label><br />
+                <input type="text" class="form-control" id="pwd" placeholder="" name="pswd" required>
+                <div class="invalid-feedback">Vui lòng nhập tên đăng nhập</div>
+            </div><br />
+            <div class="form-group">
+                <label for="uname">Địa Chỉ</label><br />
+                <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+                <div class="invalid-feedback">Vui lòng nhập địa chỉ</div>
+            </div><br />
+            <div class="form-group">
+                <label for="pwd">Email</label><br />
+                <input type="text" class="form-control" id="pwd" placeholder="" name="pswd" required>
+                <div class="invalid-feedback">Vui lòng nhập email</div>
+            </div><br />
+
+            <div class="form-group">
+                <label>Ngày Hết Hạn</label><br />
+                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" required>
+                <div class="invalid-feedback">Vui lòng nhập ngày hết hạn</div>
+            </div>
+        </div>
+        <div class="taomoigiaovien">
+            <div class="form-group">
+                <label for="pwd">Trường</label><br />
+                <select class="form-control" id="sel1" required>
+                    <option>Trường ĐH Kiến Trúc</option>
+                    <option>Trường ĐH Công Nghiệp</option>
+                    <option>Trường ĐH Thăng Long</option>
+                </select>
+                <div class="invalid-feedback">Vui lòng nhập trường</div>
+            </div><br />
+            <div class="form-group">
+                <label for="uname">Số điện thoại</label><br />
+                <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+                <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+            </div><br />
+            <div class="form-group">
+                <label for="pwd">Mật Khẩu Mặc Định</label><br />
+                <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" required>
+                <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
+            </div><br />
+            <div class="form-group">
+                <label for="uname">Nhập lại mật khẩu</label><br />
+                <input type="password" class="form-control" id="uname" placeholder="" name="uname" required>
+                <div class="invalid-feedback">Vui lòng nhập lại mật khẩu</div>
+            </div><br />
+            <div class="form-group">
+                 <label for="uname">Khối học</label><br />
+                 <select class="form-control" id="sel1" required>
+                          <option>Khối 1</option>
+                          <option>Khối 2</option>
+                          <option>Khối 3</option>
+                          <option>Khối 4</option>
+                          <option>Khối 5</option>
+                          <option>Khối 6</option>
+                          <option>Khối 7</option>
+                          <option>Khối 8</option>
+                          <option>Khối 9</option>
+                  </select>
+                      <div class="invalid-feedback">Vui lòng nhập khối học</div>
+            </div><br /><br />
+        </div>
+        <div class="text-center"><button type="button" class="btn btn-info"> <a asp-controller="GiaoVien" asp-action="GiaoVien">Hủy</a></button></div>
+        <div class="text-center"><button class="btn btn-primary" type="submit" asp-controller="GiaoVien" asp-action="GiaoVien">Lưu</button></div>
+    </form>
+    <script src="~/js/checkinput.js" asp-append-version="true"></script>
+</div>
+<style>
+    #gv1 {
+        border-bottom: 4px solid #fb7613;
+    }
+</style>

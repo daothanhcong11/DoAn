@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Trường Học--";
+}
+<div id="ds">
+    <p>Danh Sách Trường</p>
+</div>
+<div id="container-ds">
+    <input  class="form-control" type="text" name="timkiem" placeholder="Nhập tên trường" value="" />
+    <div class=""><button class="btn btn-primary" type="submit" asp-controller="" asp-action="">Tìm Kiếm </button></div>
+    <div class=""><button class="btn btn-primary" type="button"> <a asp-controller="TruongHoc" asp-action="TruongHocTaoMoi">Tạo mới</a> </button></div>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên Trường</th>
+            <th scope="col">Tên Hiển Thị</th>
+            <th scope="col">Địa Chỉ</th>
+            <th scope="col">Số Điện Thoại</th>
+            <th scope="col">Chỉnh Sửa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Trường Đại Học Kiến Trúc</td>
+            <td>DH Kiến Trúc</td>
+            <td>Hà Đông Hà Nội</td>
+            <td>0344838484</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </tbody>
+</table>
+<style>
+    #th1 {
+        border-bottom: 4px solid #fb7613;
+    }
+</style>

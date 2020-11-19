@@ -1,0 +1,227 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/***********************************My CSS***********************************************/
+#center-1 {
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    text-align:center;
+    margin-bottom:15px;
+    font-weight:500;
+
+}
+h5{
+    text-align:center;
+    margin-bottom:50px;
+}
+#center-1 form button {
+    margin: 0 auto;
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+    color: #fff;
+}
+
+    button:hover {
+        font-size: 16px;
+        cursor: pointer;
+    }
+/*-----------------------giaovien-----------------------*/
+#gv{
+    padding-top:200px;
+    text-align:center;
+}
+
+#ad {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    float: right;
+}
+    #ad img {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+    }
+.taomoigiaovien{
+    width:50%;
+    float:left;
+}
+/*-----------------------ADMIN-----------------------*/
+#ad {
+    margin-right: 120px;
+}
+#ad:hover > #ad-drop {
+    display:block;
+}
+#ad-drop{
+    width: 170px;
+    height:133px;
+    display:none;
+    border:1px solid #e5e5e5;
+    border-radius:5px;
+    background-color:white;
+}
+    #ad-drop ul li {
+        margin-left: -30px;
+        text-decoration: none;
+        padding-top: 14px;
+        color: #0366d6;
+    }
+#center-2{
+       width: 70%;
+       margin: 0 auto;
+       min-width: 651px;
+}
+.menu li {
+    float: right;
+    list-style: none;
+    color: #FF6633;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+   .menu li a:hover {
+        color: #f79f14;
+        cursor: pointer;
+    }
+
+#ds{
+    width:28%;
+    text-align:center;
+    margin: auto;
+    margin-bottom:30px;
+}
+#ds p{
+    border-bottom:#0366d6 solid 4px;
+    padding-bottom:4px;
+    margin-left:4px;
+    margin-right:4px;
+    min-width:155px;
+    font-size:18px;
+}
+#container-ds{
+    min-width:555px;
+    margin-bottom:140px;
+    padding:0;
+}
+#container-ds .btn {
+    float: left;
+    margin-left: 15px;
+}
+#container-ds .form-control {
+    width:57%;
+    float:left;
+
+}
+#container-ds a {
+    color :white;
+}
+table {
+    min-width: 777px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

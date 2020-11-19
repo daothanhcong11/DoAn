@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Tạo Tài Khoản Admin";
+}
+<div id="ds">
+    <p>Tạo tài khoản</p>
+</div>
+<div id="container-ds">
+    <form action="" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="uname">Email</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập email</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Mật khẩu mặc định</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Nhập lại mật khẩu</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập tên lại mật khẩu</div>
+        </div><br /> <br />
+        <div class="text-center"><button class="btn btn-primary" type="submit" asp-controller="TruongHoc" asp-action="TruongHoc">Tạo tài khoản</button></div>
+        <script src="~/js/checkinput.js" asp-append-version="true"></script>
+    </form>
+</div>

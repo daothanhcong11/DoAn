@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Sửa Tài Khoản Admin";
+}
+<div id="ds">
+    <p>Cập nhật tài khoản</p>
+</div>
+<div id="container-ds">
+    <form action="" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="uname">Tên đăng nhập</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập tên đăng nhập</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Số điện thoại</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập tên môn học</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Email</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập tên môn học</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Mật khẩu hiện tại</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
+        </div><br />
+        <div class="form-group">
+            <label for="uname">Mật khẩu mới</label><br />
+            <input type="password" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập mật khẩu mới</div>
+        </div><br />
+        <div class="form-group">
+            <label for="pwd">Nhập lại mật khẩu mới</label><br />
+            <input type="password" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập lại mật khẩu mới</div>
+        </div><br /><br /><br />
+        <div class="text-center"><button type="button" class="btn btn-info"> <a asp-controller="TruongHoc" asp-action="TruongHoc">Bỏ qua</a></button></div>
+        <div class="text-center"><button class="btn btn-primary" type="submit" asp-controller="TruongHoc" asp-action="TruongHoc">Cập nhật thông tin</button></div>
+    </form>
+    <script src="~/js/checkinput.js" asp-append-version="true"></script>
+</div>
+

@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Tạo môn học mới";
+}
+<div id="ds">
+    <p>Tạo Mới Môn Học</p>
+</div>
+<div id="container-ds">
+    <form action="" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="uname">Tên Môn Học</label><br />
+            <input type="text" class="form-control" id="uname" placeholder="" name="uname" required>
+            <div class="invalid-feedback">Vui lòng nhập tên môn học</div>
+        </div><br />
+        <div class="form-group">
+            <label for="pwd">Khối học</label><br />
+            <select class="form-control" id="sel1" required>
+                       <option>Khối 1</option>
+                       <option>Khối 2</option>
+                       <option>Khối 3</option>
+                       <option>Khối 4</option>
+                       <option>Khối 5</option>
+                       <option>Khối 6</option>
+                       <option>Khối 7</option>
+                       <option>Khối 8</option>
+                       <option>Khối 9</option>
+            </select>
+            <div class="invalid-feedback">Vui lòng nhập khối học</div>
+        </div><br />
+        <div class="form-group">
+            <label for="pwd">Miêu tả</label><br />
+            <textarea class="form-control" id="pwd" placeholder="" name="pswd" ></textarea>
+            <div class="invalid-feedback">Vui lòng nhập miêu tả</div>
+        </div><br /><br /><br />
+        <div class="text-center"><button type="button" class="btn btn-info"> <a asp-controller="MonHoc" asp-action="MonHoc">Hủy</a></button></div>
+        <div class="text-center"><button class="btn btn-primary" type="submit" asp-controller="MonHoc" asp-action="MonHoc">Lưu</button></div>
+    </form>
+    <script src="~/js/checkinput.js" asp-append-version="true"></script>
+</div>
+<style>
+    #mh1 {
+        border-bottom: 4px solid #fb7613;
+    }
+</style>
+
